@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style0.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  </head>
+
+  <body id="cart-page">
+    <div id="site" class="cartcontent">
+      <header id="masthead"></header>
+      <div id="content">
+        <h1>Your Shopping Cart</h1>
+        <form id="shopping-cart" action="cart1.html">
+          <table class="shopping-cart">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col" colspan="2">Price</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p id="sub-total">
+            <strong>Sub Total</strong>: <span id="stotal"></span>
+          </p>
+          <ul id="shopping-cart-actions">
+            <li>
+              <input
+                type="submit"
+                name="update"
+                id="update-cart"
+                class="btn"
+                value="Update Cart"
+              />
+            </li>
+            <li>
+              <input
+                type="submit"
+                name="delete"
+                id="empty-cart"
+                class="btn"
+                value="Empty Cart"
+              />
+            </li>
+            <li>
+              <a href="products.html" class="btn">Continue Shopping</a>
+            </li>
+            <li>
+              <a href="checkout.html" class="btn">Go To Checkout</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>

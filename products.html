@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>All Products - Redstore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--<div class ="header">-->
+    <div class="container">
+      <div class="navbar">
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onClick="menutoggle()" />
+      </div>
+    </div>
+    <!--</div>-->
+
+    <!------------------------------ Products------------------------------>
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Sort by price</option>
+          <option>Sort by rating</option>
+        </select>
+      </div>
+
+      <!--<h2 class="title" >Featured Products</h2>-->
+      <div class="row">
+        <div class="col-4">
+          <a href="products-details.html"
+            ><img src="images/product-11.jpg"
+          /></a>
+          <a href="products-details.html"><h4>Downshifter Sports Shoes</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh500.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+
+        <div class="col-4">
+          <a href="lace.html"><img src="images/buy-3.jpg" /></a>
+          <h4>Lace Fastening Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh1500.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+      </div>
+
+      <!-------------- new row----------------->
+
+      <div class="row">
+        <div class="col-4">
+          <a href="products-details.html"><img src="images/product-5.jpg" /></a>
+          <h4>Flat Heel gray hoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh500.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+
+        <div class="col-4">
+          <a href="socks.html"><img src="images/product-7.jpg" /></a>
+          <h4>HRX Men's cotton socks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh900.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+        <div class="col-4">
+          <a href="products-details.html"><img src="images/product-2.jpg" /></a>
+          <h4>Lace-Up Running Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh350.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+      </div>
+      <!--new row for the latest product-->
+      <div class="row">
+        <div class="col-4">
+          <a href="socks.html"><img src="images/product-7.jpg" /></a>
+          <h4>HRX cotton socks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh1000.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+
+        <div class="col-4">
+          <a href="lace.html"><img src="images/product-12.jpg" /></a>
+          <h4>Lace-Fastening white Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh200.00</p>
+          <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+        </div>
+      </div>
+
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+    <!----------------------------------footer------------------------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Blog Post</li>
+              <li>Policy & Privacy</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+        <!--horizontal line-->
+        <p class="copyright">Copyright 2023 - Eliza</p>
+      </div>
+    </div>
+  </body>
+</html>
